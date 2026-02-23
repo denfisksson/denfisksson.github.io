@@ -22,7 +22,7 @@ export default function TechStack() {
   }
 
   return (
-    <section id="tech-stack" className="section-padding bg-muted/30">
+    <section id="tech-stack" className="section-padding" style={{ backgroundColor: '#04040e' }}>
       <div className="container-custom">
         <FadeIn>
           <SectionTitle>Tech Stack</SectionTitle>

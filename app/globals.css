@@ -3,11 +3,11 @@
 :root {
   --background: #0a0a0a;
   --foreground: #ffffff;
-  --muted: #1a1a1a;
-  --muted-foreground: #737373;
-  --border: #262626;
-  --accent: #2563eb;
-  --accent-hover: #1d4ed8;
+  --muted: #0d1220;
+  --muted-foreground: #8b9bb0;
+  --border: #1a2438;
+  --accent: #FFE667;
+  --accent-hover: #dfc95a;
   --font-inter: var(--font-geist-sans);
   --font-anton: 'Anton', Impact, sans-serif;
 }
@@ -58,6 +58,94 @@
       opacity: 1;
     }
   }
+
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes twinkle {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes float-slow {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(10px, -20px);
+    }
+    50% {
+      transform: translate(-5px, -40px);
+    }
+    75% {
+      transform: translate(-15px, -20px);
+    }
+  }
+
+  @keyframes float-medium {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    33% {
+      transform: translate(-15px, -30px);
+    }
+    66% {
+      transform: translate(10px, -15px);
+    }
+  }
+
+  @keyframes float-fast {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(8px, -25px);
+    }
+  }
+
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+  }
+
+  /* Shimmer animation */
+  --animate-shimmer: shimmer 8s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 20s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 15s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float-fast 10s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
 }
 
 * {
@@ -75,6 +163,14 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Cursor pointer for interactive elements */
+button,
+a,
+[role="button"],
+[onclick] {
+  cursor: pointer;
 }
 
 /* Custom utility classes */

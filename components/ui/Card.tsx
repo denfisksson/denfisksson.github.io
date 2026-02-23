@@ -45,16 +45,16 @@ export default function Card({ project, className }: CardProps) {
         </div>
 
         {/* Links */}
-        <div className="flex gap-4 pt-2">
+        <div className="flex flex-wrap gap-4 pt-2">
           {project.githubUrl && (
             <a
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors link-underline"
+              className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               <Github size={16} />
-              <span>Code</span>
+              <span className="whitespace-nowrap">Code</span>
             </a>
           )}
           {project.liveUrl && (
@@ -62,10 +62,10 @@ export default function Card({ project, className }: CardProps) {
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors link-underline"
+              className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               <ExternalLink size={16} />
-              <span>Live Demo</span>
+              <span className="whitespace-nowrap">Live Demo</span>
             </a>
           )}
         </div>

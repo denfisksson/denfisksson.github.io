@@ -29,7 +29,7 @@ export default function Header() {
             onClick={() => handleNavClick('home')}
             className="text-xl font-bold text-foreground hover:text-accent transition-colors"
           >
-            JD.
+            DL.
           </button>
 
           {/* Desktop Navigation */}

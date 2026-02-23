@@ -18,10 +18,10 @@ export default function Button({
   href,
   ...props
 }: ButtonProps) {
-  const baseStyles = 'inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background disabled:opacity-50 disabled:pointer-events-none'
+  const baseStyles = 'inline-flex items-center justify-center font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 focus:ring-offset-background disabled:opacity-50 disabled:pointer-events-none cursor-pointer'
 
   const variants = {
-    default: 'bg-accent text-white hover:bg-accent-hover',
+    default: 'bg-accent text-background hover:bg-accent-hover',
     outline: 'border-2 border-foreground text-foreground hover:bg-foreground hover:text-background',
     ghost: 'text-foreground hover:bg-muted'
   }

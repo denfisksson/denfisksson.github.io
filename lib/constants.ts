@@ -1,18 +1,18 @@
 import { Statistic, TechCategory, ExperienceItem, Project, SocialLink, PersonalInfo } from '@/types/content'
 
 export const PERSONAL_INFO: PersonalInfo = {
-  name: 'John Doe',
+  name: 'Daniel López',
   role: 'FRONTEND DEVELOPER',
-  email: 'john.doe@example.com',
-  location: 'San Francisco, CA',
+  email: 'dankolpz@icloud.com',
+  location: 'Prague, Czech Republic 🇨🇿',
   bio: `I'm a passionate frontend developer with over 3 years of experience building modern web applications. I specialize in creating performant, accessible, and visually stunning user interfaces using React, Next.js, and TypeScript. I believe in a user-centered design approach and focus on delivering scalable, high-performing solutions that make a real impact.`,
   resumeUrl: '/resume.pdf'
 }
 
 export const HERO_STATS: Statistic[] = [
-  { value: '3+', label: 'Years Experience' },
-  { value: '15+', label: 'Projects Completed' },
-  { value: '10K+', label: 'Hours Coding' }
+  { value: '10+', label: 'Years experience' },
+  { value: '15+', label: 'Projects completed' },
+  { value: '∞', label: 'Hours coding' }
 ]
 
 export const TECH_STACK: TechCategory[] = [
@@ -25,10 +25,10 @@ export const TECH_STACK: TechCategory[] = [
       { name: 'Next.js' },
       { name: 'Redux' },
       { name: 'Tailwind CSS' },
-      { name: 'GSAP' },
-      { name: 'Framer Motion' },
-      { name: 'Sass' },
-      { name: 'Bootstrap' }
+      { name: 'Sass / Less' },
+      { name: 'Bootstrap' },
+      { name: 'Freemarker' },
+      { name: 'Python' }
     ]
   },
   {
@@ -41,13 +41,12 @@ export const TECH_STACK: TechCategory[] = [
     ]
   },
   {
-    title: 'Database',
+    title: 'AI Skills',
     items: [
-      { name: 'PostgreSQL' },
-      { name: 'MongoDB' },
-      { name: 'MySQL' },
-      { name: 'Redis' },
-      { name: 'Prisma' }
+      { name: 'Workflow Automation' },
+      { name: 'Prompt Engineering' },
+      { name: 'AI Assisted Development' },
+      { name: 'AI Literacy' }
     ]
   },
   {
@@ -65,10 +64,10 @@ export const TECH_STACK: TechCategory[] = [
 export const EXPERIENCES: ExperienceItem[] = [
   {
     id: 'exp-1',
-    company: 'Tech Innovations Inc.',
-    position: 'Senior Frontend Developer',
-    duration: '1 year 2 months',
-    startDate: 'Dec 2024',
+    company: 'eBay Inc. (Zeta Global)',
+    position: 'Frontend Tech Lead',
+    duration: '4 years 10 months',
+    startDate: 'Apr 2020',
     endDate: 'Present',
     description: [
       'Led development of responsive web applications using React and Next.js',
@@ -76,7 +75,7 @@ export const EXPERIENCES: ExperienceItem[] = [
       'Mentored junior developers and conducted code reviews',
       'Optimized application performance resulting in 40% faster load times'
     ],
-    technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'GSAP']
+    technologies: ['Python', 'Javascript', 'Freemarker', 'CSS', 'HTML', 'REST API']
   },
   {
     id: 'exp-2',
@@ -168,27 +167,6 @@ export const PROJECTS: Project[] = [
     technologies: ['React', 'Redux', 'Google Maps API', 'Tailwind CSS', 'Express'],
     liveUrl: 'https://example.com',
     githubUrl: 'https://github.com/johndoe/realestate',
-    featured: false
-  },
-  {
-    id: 'proj-5',
-    number: '_05',
-    title: 'Consulting Finance Website',
-    description: 'Professional corporate website for a financial consulting firm featuring dynamic content management, client testimonials, and integrated contact forms.',
-    image: '/images/projects/project-5.jpg',
-    technologies: ['HTML5', 'CSS/SCSS', 'JavaScript', 'jQuery', 'PHP'],
-    liveUrl: 'https://example.com',
-    featured: false
-  },
-  {
-    id: 'proj-6',
-    number: '_06',
-    title: 'DevLinks Profile Manager',
-    description: 'Developer link aggregator platform with drag-and-drop link ordering, custom theming, and shareable profile pages for developers to showcase their online presence.',
-    image: '/images/projects/project-6.jpg',
-    technologies: ['Next.js', 'TypeScript', 'Formik', 'React DnD', 'MongoDB'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/johndoe/devlinks',
     featured: false
   }
 ]

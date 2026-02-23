@@ -16,12 +16,12 @@ const anton = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "John Doe | Frontend Developer Portfolio",
-  description: "Portfolio of John Doe - Frontend Developer specializing in React, Next.js, and TypeScript. Building modern, performant web applications with exceptional user experiences.",
+  title: "Daniel López | Frontend Developer Portfolio",
+  description: "Portfolio of Daniel López - Frontend Developer specializing in React, Next.js, and TypeScript. Building modern, performant web applications with exceptional user experiences.",
   keywords: ["frontend", "developer", "react", "nextjs", "typescript", "portfolio", "web development"],
-  authors: [{ name: "John Doe" }],
+  authors: [{ name: "Daniel López" }],
   openGraph: {
-    title: "John Doe | Frontend Developer",
+    title: "Daniel López | Frontend Developer",
     description: "Portfolio showcasing modern web development projects",
     type: "website",
   },

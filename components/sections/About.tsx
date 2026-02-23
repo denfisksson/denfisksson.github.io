@@ -11,7 +11,9 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="section-padding bg-background">
+    <section id="about" className="relative section-padding overflow-hidden" style={{
+      background: 'linear-gradient(to bottom, #0a0f1e 0%, #0a0a0a 100%)'
+    }}>
       <div className="container-custom">
         <FadeIn>
           <SectionTitle>About Me</SectionTitle>
@@ -27,8 +29,8 @@ export default function About() {
               <div className="space-y-3">
                 {highlights.map((highlight, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
-                    <p className="text-foreground">{highlight}</p>
+                    <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2.5 flex-shrink-0" />
+                    <p className="text-foreground leading-relaxed">{highlight}</p>
                   </div>
                 ))}
               </div>

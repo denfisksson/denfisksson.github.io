@@ -22,7 +22,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="section-padding bg-muted/30">
+    <section id="projects" className="section-padding" style={{ backgroundColor: '#0a0f1e' }}>
       <div className="container-custom">
         <FadeIn>
           <SectionTitle subtitle="A selection of projects I've worked on recently">
