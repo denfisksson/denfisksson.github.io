@@ -48,7 +48,7 @@ export default function Header() {
               size="sm"
               onClick={() => scrollToSection('contact')}
             >
-              Hire Me
+              Get in touch
             </Button>
           </div>
 

@@ -54,11 +54,22 @@ export default function Experience() {
                   {/* Content */}
                   <div className="space-y-4">
                     <div>
-                      <h3 className="text-xl md:text-2xl font-bold text-foreground">
+                      <h3 className="text-xl md:text-2xl font-bold text-foreground job-title-fill">
                         {exp.position}
                       </h3>
                       <p className="text-lg text-muted-foreground mt-1">
-                        {exp.company} • {exp.duration}
+                        {exp.companyUrl ? (
+                          <a
+                            href={exp.companyUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-accent transition-colors"
+                          >
+                            {exp.company}
+                          </a>
+                        ) : (
+                          exp.company
+                        )} • {exp.duration}
                       </p>
                       <p className="text-sm text-muted-foreground">
                         {exp.startDate} - {exp.endDate}

@@ -17,6 +17,7 @@ export interface TechCategory {
 export interface ExperienceItem {
   id: string
   company: string
+  companyUrl?: string
   position: string
   duration: string
   startDate: string

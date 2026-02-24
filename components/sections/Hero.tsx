@@ -133,16 +133,16 @@ export default function Hero() {
             <Button
               variant="default"
               size="lg"
-              onClick={() => scrollToSection('projects')}
+              onClick={() => scrollToSection('contact')}
             >
-              View my work
+              Get in touch
             </Button>
             <Button
               variant="outline"
               size="lg"
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection('projects')}
             >
-              Get in touch
+              View my work
             </Button>
           </div>
         </div>

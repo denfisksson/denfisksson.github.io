@@ -65,62 +65,57 @@ export const EXPERIENCES: ExperienceItem[] = [
   {
     id: 'exp-1',
     company: 'eBay Inc. (Zeta Global)',
+    companyUrl: 'https://www.ebay.com',
     position: 'Frontend Tech Lead',
-    duration: '4 years 10 months',
-    startDate: 'Apr 2020',
+    duration: '5 years 8 months',
+    startDate: 'Jun 2020',
     endDate: 'Present',
     description: [
-      'Led development of responsive web applications using React and Next.js',
-      'Implemented complex animations using Framer Motion and GSAP',
-      'Mentored junior developers and conducted code reviews',
-      'Optimized application performance resulting in 40% faster load times'
+      'Led the Buyer Transactional portfolio migration to a modern design system, increasing revenue by 7%.',
+      'Spearheaded a full codebase refactor using design-principle modularity, significantly improving maintainability and dev velocity.',
+      'Mentors a 10-person team; developed custom support utilities and technical playbooks that streamlined internal workflows.',
+      'Actively bridges the gap between engineering and stakeholders to ensure technical debt is prioritized alongside feature delivery.'
     ],
     technologies: ['Python', 'Javascript', 'Freemarker', 'CSS', 'HTML', 'REST API']
   },
   {
     id: 'exp-2',
-    company: 'Digital Solutions Co.',
-    position: 'Frontend Developer',
-    duration: '1 year 1 month',
-    startDate: 'Oct 2023',
-    endDate: 'Nov 2024',
+    company: 'Wunderman Thompson (VML)',
+    companyUrl: 'https://www.vml.com',
+    position: 'Frontend Specialist',
+    duration: '3 years 6 months',
+    startDate: 'Oct 2016',
+    endDate: 'Apr 2020',
     description: [
-      'Developed and maintained multiple client-facing web applications',
-      'Collaborated with designers to implement pixel-perfect UI components',
-      'Integrated RESTful APIs and managed application state with Redux',
-      'Participated in agile development processes and sprint planning'
+      'Automated Microsoft UK site updates, achieving an 80% increase in speed through custom scripts.',
+      'Developed a full-stack internal HR application to automate holiday and sick leave tracking, replacing manual legacy systems.',
+      'Founded a peer-to-peer knowledge guild, reducing cross-team blockers through structured programming support sessions.',
     ],
-    technologies: ['React', 'Redux', 'JavaScript', 'CSS Modules', 'Jest']
+    technologies: ['Javascript', 'HTML', 'CSS / LESS', 'Python', 'Kubernetes']
   },
   {
     id: 'exp-3',
-    company: 'WebDev Agency',
-    position: 'Frontend Engineer',
-    duration: '11 months',
-    startDate: 'Oct 2022',
-    endDate: 'Sep 2023',
+    company: 'Pixelfield s.r.o.',
+    position: 'Full Stack UI Designer & Developer',
+    duration: '3 months',
+    startDate: 'Jul 2015',
+    endDate: 'Oct 2015',
     description: [
-      'Built responsive websites and web applications for various clients',
-      'Implemented modern frontend architectures and best practices',
-      'Worked closely with backend teams to integrate APIs',
-      'Ensured cross-browser compatibility and accessibility standards'
+      'Reduced web development friction by 40% by optimizing the design-to-code pipeline and delivery workflows.',
+      'Successfully delivered custom solutions and support to several clients across various industries'
     ],
-    technologies: ['React', 'JavaScript', 'Sass', 'Bootstrap', 'Webpack']
+    technologies: ['Python', 'JavaScript', 'HTML', 'CSS', 'Figma', 'Jenkins', 'jQuery']
   },
   {
     id: 'exp-4',
-    company: 'StartupLab',
-    position: 'Junior Frontend Developer',
-    duration: '9 months',
-    startDate: 'Jan 2022',
-    endDate: 'Oct 2022',
+    company: 'From The Bench Games',
+    position: 'Graphic Designer Intern',
+    duration: '3 months',
+    startDate: 'Jan 2015',
+    endDate: 'Apr 2015',
     description: [
-      'Assisted in developing user interface components',
-      'Participated in code reviews and learned industry best practices',
-      'Fixed bugs and improved existing codebases',
-      'Collaborated with cross-functional teams on feature development'
     ],
-    technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Git']
+    technologies: ['Figma', 'Photoshop', 'Wordpress']
   }
 ]
 
