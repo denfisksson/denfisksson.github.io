@@ -30,9 +30,7 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build with Next.js
-        run: |
-          cd $GITHUB_WORKSPACE
-          NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS=1 npm run build
+        run: npx next build
         env:
           NEXT_TURBOPACK_EXPERIMENTAL_USE_SYSTEM_TLS_CERTS: "1"
 
