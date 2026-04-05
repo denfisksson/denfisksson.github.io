@@ -2,10 +2,10 @@ import { Statistic, TechCategory, ExperienceItem, Project, SocialLink, PersonalI
 
 export const PERSONAL_INFO: PersonalInfo = {
   name: 'Daniel López',
-  role: 'FRONTEND DEVELOPER',
+  role: 'SOFTWARE ENGINEER',
   email: 'dankolpz@icloud.com',
   location: 'Prague, Czech Republic 🇨🇿',
-  bio: `I'm a passionate frontend developer with over 3 years of experience building modern web applications. I specialize in creating performant, accessible, and visually stunning user interfaces using React, Next.js, and TypeScript. I believe in a user-centered design approach and focus on delivering scalable, high-performing solutions that make a real impact.`,
+  bio: `I'm a passionate software engineer with over 3 years of experience building modern web applications. I specialize in creating performant, usable, and visually stunning user interfaces using React, Next.js, and TypeScript. I believe in a user-centered design approach and focus on delivering scalable, high-performing solutions that make a real impact.`,
   resumeUrl: '/resume.pdf'
 }
 
