@@ -2,7 +2,7 @@
 
 import { useState, FormEvent } from 'react'
 import { PERSONAL_INFO } from '@/lib/constants'
-import { Send } from 'lucide-react'
+import { Send, CheckCircle, XCircle } from 'lucide-react'
 import Button from '../ui/Button'
 import FadeIn from '../animations/FadeIn'
 
@@ -14,20 +14,45 @@ export default function Contact() {
     message: ''
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitStatus('idle')
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 500))
+    try {
+      // Web3Forms API endpoint
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY || 'YOUR_WEB3FORMS_ACCESS_KEY',
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          from_name: 'Portfolio Contact Form',
+          to_email: PERSONAL_INFO.email,
+        }),
+      })
 
-    // Create mailto link with form data
-    const mailtoLink = `mailto:${PERSONAL_INFO.email}?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`)}`
-    window.location.href = mailtoLink
+      const data = await response.json()
 
-    setIsSubmitting(false)
-    setFormData({ name: '', email: '', subject: '', message: '' })
+      if (data.success) {
+        setSubmitStatus('success')
+        setFormData({ name: '', email: '', subject: '', message: '' })
+      } else {
+        setSubmitStatus('error')
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+      setSubmitStatus('error')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -116,6 +141,20 @@ export default function Contact() {
                   placeholder="Tell me about your project..."
                 />
               </div>
+
+              {/* Submit Status Messages */}
+              {submitStatus === 'success' && (
+                <div className="flex items-center gap-2 p-4 bg-green-500/10 border border-green-500/30 rounded-lg text-green-400">
+                  <CheckCircle size={20} />
+                  <span>Message sent successfully! I'll get back to you soon.</span>
+                </div>
+              )}
+              {submitStatus === 'error' && (
+                <div className="flex items-center gap-2 p-4 bg-red-500/10 border border-red-500/30 rounded-lg text-red-400">
+                  <XCircle size={20} />
+                  <span>Failed to send message. Please try again or email me directly.</span>
+                </div>
+              )}
 
               {/* Submit Button */}
               <div className="flex flex-col sm:flex-row gap-4">

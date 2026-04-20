@@ -5,14 +5,14 @@ export const PERSONAL_INFO: PersonalInfo = {
   role: 'SOFTWARE ENGINEER',
   email: 'dankolpz@icloud.com',
   location: 'Prague, Czech Republic 🇨🇿',
-  bio: `I'm a passionate software engineer with over 3 years of experience building modern web applications. I specialize in creating performant, usable, and visually stunning user interfaces using React, Next.js, and TypeScript. I believe in a user-centered design approach and focus on delivering scalable, high-performing solutions that make a real impact.`,
+  bio: `I'm a passionate software engineer with over 10 years of experience building modern web applications. I specialize in creating performant, usable, and visually stunning user interfaces using React, Next.js, and TypeScript. I believe in a user-centered design approach and focus on delivering scalable, high-performing solutions that make a real impact.`,
   resumeUrl: '/resume.pdf'
 }
 
 export const HERO_STATS: Statistic[] = [
-  { value: '10+', label: 'Years experience' },
-  { value: '15+', label: 'Projects completed' },
-  { value: '∞', label: 'Hours coding' }
+  { value: 'Tech Lead at eBay', label: 'Current Role' },
+  { value: '10+', label: 'Years Experience' },
+  { value: 'Mastering Modern Stack', label: 'Current Focus' }
 ]
 
 export const TECH_STACK: TechCategory[] = [
@@ -122,52 +122,20 @@ export const EXPERIENCES: ExperienceItem[] = [
 export const PROJECTS: Project[] = [
   {
     id: 'proj-1',
+    slug: 'baby-map',
     number: '_01',
-    title: 'E-Commerce Platform',
-    description: 'Full-stack e-commerce solution with real-time inventory management, secure payment processing via Stripe, and an intuitive admin dashboard for product management.',
-    image: '/images/projects/project-1.jpg',
-    technologies: ['Next.js', 'TypeScript', 'Stripe', 'PostgreSQL', 'Tailwind CSS'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/johndoe/ecommerce',
-    featured: true
-  },
-  {
-    id: 'proj-2',
-    number: '_02',
-    title: 'Task Management App',
-    description: 'Collaborative task management application with drag-and-drop functionality, real-time updates, and team collaboration features built with React and Firebase.',
-    image: '/images/projects/project-2.jpg',
-    technologies: ['React', 'Redux', 'Firebase', 'Material-UI', 'DnD Kit'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/johndoe/taskapp',
-    featured: true
-  },
-  {
-    id: 'proj-3',
-    number: '_03',
-    title: 'AI Resume Analyzer',
-    description: 'AI-powered resume analysis tool using GPT-4 to provide intelligent feedback on resumes, suggest improvements, and optimize for ATS systems.',
-    image: '/images/projects/project-3.jpg',
-    technologies: ['Next.js', 'GPT-4 API', 'PostgreSQL', 'Prisma', 'shadcn/ui'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/johndoe/resume-analyzer',
-    featured: true
-  },
-  {
-    id: 'proj-4',
-    number: '_04',
-    title: 'Real Estate Marketplace',
-    description: 'Modern real estate listing platform with advanced search filters, interactive map integration, and property comparison tools for home buyers and sellers.',
-    image: '/images/projects/project-4.jpg',
-    technologies: ['React', 'Redux', 'Google Maps API', 'Tailwind CSS', 'Express'],
-    liveUrl: 'https://example.com',
-    githubUrl: 'https://github.com/johndoe/realestate',
-    featured: false
+    title: 'Baby Map',
+    description: 'Telegram Bot that helps parents find nearby baby-friendly places like parks, cafes, and stores. Built with Python, Express, and the Telegram Bot API.',
+    image: '', // Leave empty if no image available - will show number fallback
+    technologies: ['Python', 'Express.js', 'Telegram Bot API'],
+    liveUrl: 'https://t.me/BabyMap_Bot',
+    githubUrl: 'https://github.com/denfisksson/baby-map-bot',
+    featured: true,
+    hasDetailPage: false // Set to true when you've written the case study
   }
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { platform: 'GitHub', url: 'https://github.com/johndoe', icon: 'Github' },
-  { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/daniel-lopez-paterna/', icon: 'Linkedin' },
-  { platform: 'Twitter', url: 'https://twitter.com/johndoe', icon: 'Twitter' }
+  { platform: 'GitHub', url: 'https://github.com/denfisksson/', icon: 'Github' },
+  { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/daniel-lopez-paterna/', icon: 'Linkedin' }
 ]

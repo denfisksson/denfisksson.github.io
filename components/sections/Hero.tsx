@@ -122,9 +122,9 @@ export default function Hero() {
           </h1>
 
           {/* Statistics */}
-          <div ref={statsRef} className="grid grid-cols-3 gap-8 md:gap-12 mb-12 max-w-2xl">
+          <div ref={statsRef} className="flex flex-wrap gap-4 mb-12 max-w-2xl">
             {HERO_STATS.map((stat) => (
-              <StatCard key={stat.label} stat={stat} />
+              <StatCard key={stat.label} stat={stat} variant="badge" />
             ))}
           </div>
 

@@ -4,9 +4,9 @@ import FadeIn from '../animations/FadeIn'
 
 export default function About() {
   const highlights = [
-    '3+ years of professional frontend development experience',
+    '10+ years of professional software development experience',
     'Specialized in React, Next.js, and TypeScript',
-    'Strong focus on performance optimization and accessibility',
+    'Strong focus on performance optimization and usability',
     'Passionate about creating exceptional user experiences'
   ]
 
@@ -37,7 +37,7 @@ export default function About() {
 
               <div className="pt-4">
                 <p className="text-muted-foreground">
-                  <span className="text-foreground font-semibold">Location:</span> {PERSONAL_INFO.location}
+                  <span className="text-foreground font-semibold">Location:</span> {PERSONAL_INFO.location} | Open to remote
                 </p>
               </div>
             </div>

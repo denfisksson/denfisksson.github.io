@@ -28,6 +28,7 @@ export interface ExperienceItem {
 
 export interface Project {
   id: string
+  slug: string
   number: string
   title: string
   description: string
@@ -36,6 +37,7 @@ export interface Project {
   liveUrl?: string
   githubUrl?: string
   featured: boolean
+  hasDetailPage?: boolean
 }
 
 export interface SocialLink {
